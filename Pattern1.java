@@ -191,9 +191,45 @@ public class Pattern1 {
 	}
 		 
 	
-	
-	
-	
+	/*
+101010
+010101
+101010
+010101
+101010
+	 */
+	System.out.println("___________________________________");
+	for(int i=1;i<=5;i++)//rows
+	{
+		for(int j=1;j<=6;j++)
+		{
+			if(i%2==1)  //row ==odd
+				{
+			
+					if(j%2==1)  ///column ==odd
+					System.out.print("1");
+				else
+					System.out.print("0");   	
+				
+				
+				}
+		
+			else
+		  {
+			
+				if(j%2==1)
+					System.out.print("0");
+				else
+					System.out.print("1");   	
+				
+			}
+	}
+			
+		System.out.println();	
+		
+		
+		
+	}//outer for
 	
 	
 	
