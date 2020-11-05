@@ -3,33 +3,34 @@ import java.util.Scanner;
 public class SwitchDemo {
 
 	public static void main(String[] args) {
+		//char n='1';//49
+		//String n="seven";
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter day number");
-		int dayno=sc.nextInt();
-		switch(dayno)
+		System.out.println("Enter String for day");
+		String n=sc.next();
+		int i=1;
+		System.out.println("hi");
+		switch(n)
 		{
-		case 1+1:System.out.println("Tueday");
-	       break;
-		case 3:System.out.println("Sunday");
-		       break;
-		case 4:System.out.println("Monday");
-		       break;
-		case 5:System.out.println("Thurday");
-	       break;
-		case 6:System.out.println("Wednsday");
-	       break;
-		
-		case 1:System.out.println("Friday");
-	       break;
-		case 7:System.out.println("Saturday");
-	       break;
-	     	
-		default:System.out.println("Enter day  no. between 1-7");
+		case "1":System.out.println("Mon");
+				break;
+		case "2":System.out.println("Tue");
+				break;
+		case "3":System.out.println("Wed");
+		break;
+		case "4":System.out.println("Thur");
+		break;
+		case "6":System.out.println("Sat");
+		break;
+		case "5":System.out.println("Fri");
+		break;
+		case "seven":System.out.println("Sun");
+		break;
+		default:System.out.println("Plz enter between 1-7");		
 		}
 		
+		System.out.println("End of switch");
 		
-		System.out.println("have a nice day");
-
 	}
 
 }
