@@ -6,10 +6,13 @@ public class SwitchDemo {
 		//char n='1';//49
 		//String n="seven";
 		Scanner sc=new Scanner(System.in);
+		int ch=0;
+		do
+		{
 		System.out.println("Enter String for day");
 		String n=sc.next();
 		int i=1;
-		System.out.println("hi");
+		
 		switch(n)
 		{
 		case "1":System.out.println("Mon");
@@ -28,8 +31,9 @@ public class SwitchDemo {
 		break;
 		default:System.out.println("Plz enter between 1-7");		
 		}
-		
-		System.out.println("End of switch");
+		System.out.println("do u want to continue? press 0 to stop");
+		 ch=sc.nextInt();
+		}while(ch!=0);
 		
 	}
 

@@ -1,119 +1,131 @@
-package com.hefshine.Iterative;
-
+/*
+ *****
+ *****
+ *****
+ *****
+ *****
+ */
 public class Pattern1 {
 
 	public static void main(String[] args) {
-		/*
-		 * System.out.print("*"); System.out.print("*"); System.out.print("*");
-		 * System.out.print("*"); System.out.print("*");
-		 */
-		
-		
-	for(int j=1;j<=10;j++)      ///rows
-	{
-		for(int i=1;i<=5;i++)   //columns
+		for(int i=1;i<=5;i++)//row
+		{
+			for(int j=1;j<=5;j++)//col
 			{
 				System.out.print("*");
 			}
-		System.out.println();
-	}
-
-		/*
-		*               
-		**
-		***
-		****
-		*****
-		*/
-	
-	
-	System.out.println("____________________________");
-	
-	
-	
-	for(int i=1;i<=5;i++)
+			System.out.println();
+		}
+		
+	System.out.println("______________________________");	
+		
+	for(int i=1;i<=5;i++)//row
 	{
-		for(int j=1;j<=i;j++)
+		for(int j=1;j<=5;j++)//col //12345
 		{
-			System.out.print("*");
+			System.out.print(j);
 		}
 		System.out.println();
 	}
+		
+		
+	System.out.println("______________________________");	
 	
+	for(int i=1;i<=5;i++)//row
+	{
+		for(int j=1;j<=5;j++)//col //
+		{
+			System.out.print(i);//11111
+		}                       //22222
+		System.out.println();
+	}
+		
+	System.out.println("______________________________");	
+	
+	for(int i=10;i<15;i++)//row
+	{
+		for(int j=5;j>=1;j--)//col
+		{
+			System.out.print(i+" ");
+		}
+		System.out.println();
+	}	
+		
+		
+	System.out.println("______________________________");	
+	
+	for(int i=1;i<=5;i++)//row
+	{              //1<=4
+		for(int j=1;j<=i;j++)//col //1     i=1 j=1
+		{                          //12    i=2 j=1,2
+			System.out.print(j);   //123
+		}                          //1234
+		System.out.println();      //12345
+	}
+		
 	/*
-	  *
-	 ** 
-	*** 
-   ****
-  *****
+	12345
+	1234
+	123
+	12
+	1
+	 	
 	 */
 	
-	System.out.println("____________________________");
+	System.out.println("______________________________");	
 	
-	for(int i=1;i<=5;i++)
+	for(int i=1;i<=5;i++)//row
 	{
-			/*
-			 * for(int k=5-i;k>=1;k--)
-			 *  { System.out.print("$");
-			 *   }
-			 */
-		for(int k=1;k<=5-i;k++)
+		for(int j=1;j<=6-i;j++)//col 
 		{
-			System.out.print(" ");
-		}
-		
-		for(int j=1;j<=i;j++)
-		{
-			System.out.print("*");
+			System.out.print(j);
 		}
 		System.out.println();
 	}
-/*	
-	*****
-	****
-	***
-	**
-	*
-	*
-*/
-	System.out.println("_______________________________");
-	for(int i=1;i<=5;i++)
-	{
-		
-		for(int j=5;j>=i;j--)
-		{
-			System.out.print("*");
-		}
-		System.out.println();
-	}
-		
-	System.out.println("_______________________________");	
-	
 	/*
-	 12345
-	 12345
-	 12345
-	 12345
-	 
-	 
-	 */
+	54321
+	5432
+	543
+	54
+	5
+	*/
 	
-	for(int i=1;i<=5;i++)
+	
+	
+	
+	System.out.println("______________________________");	
+	
+	for(int i=1;i<=5;i++)//row
 	{
-		
-		for(int j=1;j<=5;j++)
+		for(int j=5;j>=i;j--)//col //12345
 		{
-			System.out.print(j);//
+			System.out.print(j);
+		}
+		System.out.println();
+	}
+	/*
+	12345
+	2345
+	345
+	45
+	5
+	45
+	345
+	2345
+	12345*/
+	System.out.println("______________________________");	
+	for(int i=1;i<=5;i++)//row
+	{
+		for(int j=i;j<=5;j++)//col //12345
+		{
+			System.out.print(j);
 		}
 		System.out.println();
 	}
 	
-	System.out.println("________________________");
-	
-	for(int i=1;i<=5;i++)
+	for(int i=4;i>=1;i--)//row
 	{
-		
-		for(int j=1;j<=i;j++)
+		for(int j=i;j<=5;j++)//col //
 		{
 			System.out.print(j);
 		}
@@ -121,143 +133,11 @@ public class Pattern1 {
 	}
 	
 	
-	/*
-	 A
-	 AB
-	 ABC
-	 ABCD
-	 ABCDE
-	 */
+	
+	
+	
+	
 		
-		  
-		  for(int i=1;i<=5;i++)
-		  {
-			  char ch='A';
-		    for(int j=1;j<=i;j++)
-		     {  
-		    	System.out.print(ch); 
-		    	ch++;
-		     } 
-		  System.out.println(); 
-		  
-		  }
-		  
-	/*
-	ABCDE
-	ABCD
-	ABC
-	AB
-	A
-		*/
-		  
-	System.out.println("______________________");	  
-		  
-	for(int i=1;i<=5;i++)
-	{ 
-		char ch='A';
-		
-		for(int j=5;j>=i;j--)
-		{
-			System.out.print(ch);
-			ch++;
-		}
-		System.out.println();
-	}	  
-		  
-/*
- ABCDE
-  BCDE
-   CDE
-    DE
-     E
-  		  
- */
-	char ch='A';
-	char temp=ch;
-	for(int i=1;i<=5;i++)
-	{ ch=temp;
-		for(int s=1;s<i;s++)//space
-		{
-			System.out.print(" ");
-		}
-		for(int j=5;j>=i;j--)//characters
-		{
-			System.out.print(ch);
-			ch++;//ch=ch+1
-		}
-		System.out.println();
-		
-		temp++;
 	}
-		 
-	
-	/*
-101010
-010101
-101010
-010101
-101010
-	 */
-	System.out.println("___________________________________");
-	for(int i=1;i<=5;i++)//rows
-	{
-		for(int j=1;j<=6;j++)
-		{
-			if(i%2==1)  //row ==odd
-				{
-			
-					if(j%2==1)  ///column ==odd
-					System.out.print("1");
-				else
-					System.out.print("0");   	
-				
-				
-				}
-		
-			else
-		  {
-			
-				if(j%2==1)
-					System.out.print("0");
-				else
-					System.out.print("1");   	
-				
-			}
-	}
-			
-		System.out.println();	
-		
-		
-		
-	}//outer for
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
+
 }

@@ -1,53 +1,54 @@
-package com.hefshine.Iterative;
+import java.util.Scanner;
 
-
-
-/*
- 0 1 1 2 3 5 8 13
- 
- *
- *
- *
- */
-
+// 0 1 1 2 3 5 8 13 21 34
+  //         a b c
 public class FibonacciSeries {
 
 	public static void main(String[] args) {
+		int a,b,c=0;
+		a=0;
+		b=1;
 		
-	int	a,b,c=0;
-	a=0;
-	b=1;
-	System.out.print(a+" "+b);
-	//c=a+b;//1
-		/*
-		 * a=b;//a=1 b=c;//b=2
-		 * 
-		 * c=a+b;
-		 * 
-		 * a=b;// a=1 b=c;// b=1
-		 * 
-		 * c=a+b;//c=2
-		 */
-	while(c<13) {
-		c=a+b;
-		System.out.print(" "+c);
-		a=b;//a=1;
-		b=c;//b=2
-				
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number of terms");
+		int n=sc.nextInt();
+		System.out.print(a+" "+b+" ");//0 1 
+		//int n=10;
+		
+		int i=1;
+		while(i<=n-2)
+		{
+			c=a+b;
+			System.out.print(c+" ");
+			a=b;
+			b=c;
+			i++;
+		}
+		
+		
+		
+		
+		
+		
+		
+		/*while(c<=20)
+		{
+		c=a+b;//c=8+13  =21
+		if(c<=20)
+		System.out.print(c+" ");
+		a=b;//8
+		b=c;//13
+		}*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
 	}
 
 }

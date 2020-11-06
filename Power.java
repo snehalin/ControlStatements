@@ -1,23 +1,20 @@
-package com.hefshine.Iterative;
 
 public class Power {
 
 	public static void main(String[] args) {
-		int base,power,ans=1;
-		base=2;
-		power=5;
-		//1*2=2
-		//2*2=4
-		//4*2=8
-		//8*2=16
-		//16*2=32
-		//2*2*2*2*2
-		
-		for(int i=1;i<=power;i++)
+		//2 raise to 10
+		//2*2*2*2*2*2*2*2*2*2
+		int base=2;
+		int power=3;
+		int result=1;//4<=3
+		for(int i=1;i<=power;i++)//4
 		{
-			ans=base*ans;
+			result=result*base;//8
 		}
-		System.out.println("Power="+ans);
+		
+		System.out.println(result);
+		
+		System.out.println(Math.pow(3,4));
 	}
 
 }
